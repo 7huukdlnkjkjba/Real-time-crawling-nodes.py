@@ -53,4 +53,4 @@ flowchart TD
 - 确保网络连接正常，能够访问GitHub。
 - 如果目标仓库的URL或结构发生变化，可能需要调整`REPOS`列表中的配置或`get_html_content`函数的解析逻辑。
 - 脚本会无限循环运行，可通过终止进程（如按Ctrl+C）来停止脚本。
-[](https://github.com/7huukdlnkjkjba/Real-time-crawling-nodes.py/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-27%20155902.png)
+![](https://github.com/7huukdlnkjkjba/Real-time-crawling-nodes.py/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-27%20155902.png)
