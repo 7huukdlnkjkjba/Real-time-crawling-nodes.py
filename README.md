@@ -9,7 +9,6 @@
    - 每次运行前清空目标文件。
    - 定期从`REPOS`中的前两个仓库获取内容并覆盖写入文件。
    - 如果存在第三个仓库，则获取其内容并追加写入文件。
-   - 每隔24小时重复上述操作。
 
 # 控制流图
 ```mermaid
@@ -27,7 +26,7 @@ flowchart TD
     J --> L[打印完成时间]
     K --> L
     L --> M[退出]
-    M --> 我一般添加自启动路径：C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+    
 ```
 win+r，输入shell:startup,复制下载的Real-time crawling nodes.exe文件，重启看看
 这段代码的用法如下：
