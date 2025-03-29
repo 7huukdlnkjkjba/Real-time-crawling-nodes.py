@@ -96,9 +96,6 @@ def main():
                 save_content(append_content, 'a')
 
         print(f"{time.strftime('%Y-%m-%d %H:%M:%S')} 节点更新完成")
-        print("等待24小时后再次更新...")
-        time.sleep(24 * 3600)
-
 
 if __name__ == "__main__":
     main()
