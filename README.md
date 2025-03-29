@@ -26,8 +26,9 @@ flowchart TD
     H -->|No| K[跳过]
     J --> L[打印完成时间]
     K --> L
-    L --> M[等待24小时]
-    M --> 退出
+    L --> M[退出]
+    M --> 我一般添加自启动路径：C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+win+r，输入shell:startup,复制下载的Real-time crawling nodes.exe文件，重启看看
 ```
 这段代码的用法如下：
 
@@ -36,7 +37,7 @@ flowchart TD
 3. **定义仓库信息**：在`REPOS`列表中定义了三个GitHub仓库的信息：
    - 第一个仓库从README页面中提取`<code>`标签内容。
    - 第二个和第三个仓库直接获取其原始文本内容。
-4. **运行脚本**：
+4. **运行py脚本**：
    - 确保安装了依赖库`requests`和`beautifulsoup4`，可以通过以下命令安装：
      ```bash
      pip install requests beautifulsoup4
@@ -47,10 +48,9 @@ flowchart TD
      python "Real-time crawling nodes.py"
      ```
 
-   - 脚本启动后会清空`节点.txt`文件，并开始定期从指定的GitHub仓库中获取内容，每隔24小时更新一次。
+   - 脚本启动后会清空`节点.txt`文件，并开始定期从指定的GitHub仓库中获取内容
 
 ### 注意事项
 - 确保网络连接正常，能够访问GitHub。
 - 如果目标仓库的URL或结构发生变化，可能需要调整`REPOS`列表中的配置或`get_html_content`函数的解析逻辑。
-- 脚本会无限循环运行，可通过终止进程（如按Ctrl+C）来停止脚本。
 ![](https://github.com/7huukdlnkjkjba/Real-time-crawling-nodes.py/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-27%20155902.png)
