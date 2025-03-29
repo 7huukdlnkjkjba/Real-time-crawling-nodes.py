@@ -28,8 +28,8 @@ flowchart TD
     K --> L
     L --> M[退出]
     M --> 我一般添加自启动路径：C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-win+r，输入shell:startup,复制下载的Real-time crawling nodes.exe文件，重启看看
 ```
+win+r，输入shell:startup,复制下载的Real-time crawling nodes.exe文件，重启看看
 这段代码的用法如下：
 
 1. **配置目标文件**：代码会将爬取的内容保存到`节点.txt`文件中，该文件路径为当前脚本运行目录下的`节点.txt`。
